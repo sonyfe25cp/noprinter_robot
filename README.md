@@ -1,4 +1,5 @@
-scripts_for_noprinter_java
-==========================
+NoPrinter robot
 
-only works for noprinter_java version !
+This is a group of robots working for NoPrinter.cn.
+
+

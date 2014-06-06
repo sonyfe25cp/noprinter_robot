@@ -1,0 +1,928 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="MSSmartTagsPreventParsing" content="TRUE" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<title>北理 FTP 联盟 - 灌水乐园 - BitUnion.org</title>
+<link rel="stylesheet" href="/css/10/"  type="text/css" />
+<link rel="stylesheet" href="/css/common.css" type="text/css" />
+<link rel="stylesheet" href="/css/hilight.css" type="text/css" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">
+var bu_board = "http://out.bitunion.org/";
+var bu_username = "sonyfe25cp";
+var bu_uid = "76754";
+</script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery.a-tools-1.3.js"></script>
+<script type="text/javascript" src="/js/ZeroClipboard.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/rc.js?1"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19777831-1']);
+  _gaq.push(['_setDomainName', '.bitunion.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<script type="text/javascript">
+$('#ddmenu').ready(function() {
+if($.browser.msie){$('#ddmenu > li').each(function(){$(this).hover(function(){$(this).addClass('over')}, function(){$(this).removeClass('over')})});}
+});
+$(document).ready(function(){
+$("input[type='text'], input[type='password'], input[type='file'], textarea").focus(function(){$(this).css({background:"#FFFFF2"})}).blur(function(){$(this).css({background:"transparent"})});
+//	$("input[@type='text'], input[@type='password'], input[@type='file'], textarea").focus(function(){$(this).css({background:"#FFFFF2"})}).blur(function(){$(this).css({background:"transparent"})});
+
+<!-- 修复翻页跳转 -->
+  $('input[name=custompage]').each(function() {
+//  $('input[@name=custompage]').each(function() {
+    $(this).unbind().keydown(function(ev) {
+      var e = ev ? ev : (window.event ? window.event : null);
+      if (e.keyCode == 13) {
+        if (self.location.href.indexOf('thread') >= 0) {
+          window.location.href = 'thread--' + $(this).val() + '-1.html';
+        } else if (self.location.href.indexOf('forum') >= 0) {
+          window.location.href = 'forum-14-' + $(this).val() + '.html';
+        } else if (self.location.href.indexOf('pm.php?folder=') >= 0) {
+          var folder = getUrlParam('folder');
+          window.location.href = 'pm.php?folder=' + folder + '&page=' + $(this).val();
+        }
+        return false;
+      }
+    });
+  });
+
+})
+</script>
+<table bgcolor="#FFFFFF" width="97%" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+<td width="100%" background="images/default/topbg.gif">
+<table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+
+<tr>
+<td rowspan="2" width="8"><img src="images/spacer.gif" width="0" height="0"></td>
+<td rowspan="2" valign="top"><a href="/index.php"><img src="/images/logo.gif" alt="返回首页" border="0"></a></td><td height="80" align="center">..:: 做有争议的联盟 :: 做有争议的人 ::..</td>
+</tr>
+<tr>
+<td align="center">
+<!-- 导航菜单 begin -->
+<ul id="ddmenu">
+<li>
+<a href="/">sonyfe25cp</a>
+<ul>
+<li><a href="/logging.php?action=logout" onclick="return confirm('是否确定注销？')">注销登录
+
+</a></li>
+</ul>
+</li>
+<li><a href="/pm.php">短消息</a>
+<ul>
+<li><a href="/pm.php?action=send">发送短消息</a></li>
+<li><a href="/pm.php">收件箱</a></li>
+<li><a href="/pm.php?folder=track">消息跟踪</a></li>
+</ul>
+</li>
+<li>备忘录
+<ul>
+<li><a href="/memo.php?folder=notebook">记事本</a></li>
+<li><a href="/memo.php?folder=address">通讯录</a></li>
+<li><a href="/memo.php?folder=collections">网址夹</a></li>
+</ul>
+</li>
+<li><a href="/memcp.php">控制面板</a>
+<ul>
+<li><a href="/memcp.php?action=profile">编辑个人资料</a></li>
+<li><a href="/memcp.php?action=boards">隐藏版面</a></li>
+<li><a href="/memcp.php?action=subscriptions">订阅列表</a></li>
+<li><a href="/memcp.php?action=favorites">收藏夹</a></li>
+<li><a href="/sphinxsearch.php?u=76754&t=mt">我的主题</a></li>
+<li><a href="/sphinxsearch.php?u=76754&t=mp">我的回帖</a></li>
+</ul>
+</li>
+<li>论坛功能
+<ul>
+<li><a href="/family.php">江湖门派</a></li>
+<li><a href="/bank.php">社区银行</a></li>
+<li><a href="/z_cup.php">体育博彩</a></li>
+</ul>
+</li>
+<li>娱乐游戏
+<ul>
+<li><a href="/games/HardestGame.swf" target="_blank">最难游戏</a></li>
+<li><a href="/games/llk.swf" target="_blank">在线连连看</a></li>
+<li><a href="/games/miner.swf" target="_blank">掘金者</a></li>
+<li><a href="/games/jieli.swf" target="_blank">毒中送炭</a></li>
+<li><a href="/games/light.swf" target="_blank">镜中缘</a></li>
+<li><a href="/games/egg.swf" target="_blank">与魔争蛋</a></li>
+<li><a href="/games/FlashElementTD.swf" target="_blank">草原争霸</a></li>
+<li><a href="/games/msnmine.swf" target="_blank">仿 MSN 扫雷</a></li>
+<li><a href="/games/neondisk.swf" target="_blank">NeonDisk</a></li>
+<li><a href="/games/Avalanche.swf" target="_blank">Avalanche!</a></li>
+<li><a href="/games/superstacker2.swf" target="_blank">superstacker2</a></li>
+<li><a href="/games/avalancher_v1.swf" target="_blank">雪崩避难</a></li>
+<li><a href="/games/boxcleverb.swf" target="_blank">Boxclever</a></li>
+<li><a href="/games/3dlogic.swf" target="_blank">3DLogic</a></li>
+<li><a href="/games/manufactoria.swf" target="_blank">Manufactoria</a></li>
+<li><a href="/games/light-bot.swf" target="_blank">Light Bot</a></li>
+
+</ul>
+</li>
+<li>联盟服务
+<ul><li><a href="http://www.bitren.com/">北理人网上导航</a></li>
+<li><a href="http://mirror.bitunion.org/">自由软件镜像</a></li>
+<li><a href="http://php.bitunion.org/docs.php">PHP 在线手册</a></li>
+<li><a href="/thread-10076285-1-1.html">动态DNS服务</a></li>
+<!--注释 by mylangtao 2013.09.24-->
+<li><a href="/thread-10392667-1-1.html">nod32病毒库更新(校内)</a></li>
+<li><a href="/thread-10442489-1-1.html">毕业生工作群</a></li>
+<li><a href="/thread-10480744-1-1.html">找工作群</a></li>
+<li><a href="/thread-10287865-1-1.html">出国留学</a></li>
+<li><a href="/thread-10534784-1-1.html">校园网使用</a></li>
+<!--<li><a href="/thread-10094118-1-1.html">校内虚拟主机</a></li>
+<li><a href="/thread-10090920-1-1.html">155 0Day搜索</a></li>
+<li><a href="/thread-10098744-1-1.html" style="color:red;font-weight:bold;">FTP 搜索</a></li>
+-->
+</ul>
+</li>
+<li>开放联盟
+<ul>
+<li><a href="/thread-10471436-1-1.html">API开放计划</a></li>
+<li><a href="/thread-10556444-1-1.html">联盟iOS客户端</a></li>
+<li><a href="/thread-10474940-1-1.html">联盟安卓客户端1</a></li>
+<li><a href="/thread-10556345-1-1.html">联盟安卓客户端2</a></li>
+<li><a href="/thread-10548923-1-1.html">联盟WP8客户端</a></li>
+</ul>
+</li>
+<li>信息服务
+<ul>
+<li><a href="https://www.nic.edu.cn/cgi-bin/reg/Qfreeip" target="_blank">免费 IP 查询</a></li>
+<li><a href="http://www.ip.cn" target="_blank">IP 地理位置查询</a></li>
+<li><a href="http://out.bitunion.org/ipdata/10.txt" target="_blank">校内IP分配表</a></li>
+</ul>
+</li>
+<li><a href="/search.php">论坛搜索</a></li>
+<li>论坛信息
+<ul>
+<li><a href="/member.php?action=list">会员列表</a></li>
+<li><a href="/stats.php">统计信息</a></li>
+<li><a href="/faq.php">使用帮助</a></li>
+<li><a href="/thread-334630-1-1.html">新手指南</a></li>
+</ul>
+</li>
+<li><a href="/home.php">返回首页</a></li>
+</ul>
+</tr>
+
+</table>
+</td></tr></table>
+<table bgcolor="#FFFFFF" width="97%" cellpadding="8" cellspacing="0" border="0" align="center">
+<tr><td><br><script type="text/javascript">
+var trid = "0";
+var ppp = '';
+var fpage="1";
+var fid="14";
+var fuppage="/index.php";
+var prevpage="1";
+var nextpage="2";
+$('td[id^=tr]').css('background-color', '#FFFFFF');
+//$('td[@id^=tr]').css('background-color', '#FFFFFF');
+var ascdesc="DESC";
+var filter="";
+var tag="0";
+
+</script>
+
+<table cellspacing="0" cellpadding="0" border="0" width="97%" align="center" style="table-layout: fixed"> 
+<tr><td class="nav" width="80%" nowrap>&nbsp;<a href="index.php">北理 FTP 联盟</a> &raquo; 灌水乐园</td>
+<td align="right" width="20%">
+<a href="#bottom"><img src="/images/standard/arrow_dw.gif" border="0" align="absmiddle"></a>
+</td>        
+</tr></table><br>
+
+<table width="97%" cellspacing="0" cellpadding="4" align="center">
+<tr class="mediumtxt"><td class="smalltxt">(版主: <span class="bold">
+<img src="/images/standard/online_moderator.gif" align="absmiddle"> <a href="profile-username-doctor0623.html">doctor0623</a>, <img src="/images/standard/online_moderator.gif" align="absmiddle"> <a href="profile-username-vickyvicky.html">vickyvicky</a>, <img src="/images/standard/online_moderator.gif" align="absmiddle"> <a href="profile-username-%D2%D7%B9%F0%D1%AB.html">易桂勋</a></span>)</td><td align="right" class="smalltxt"><img src="/images/standard/showdigest.gif" border="0" align="absmiddle"> 
+<a href="digest.php?fid=14">查看本版精华</a>
+</td></tr>
+<tr><td></td></tr>
+</table>
+
+<br>
+<table cellspacing="0" cellpadding="0" border="0" width="97%" align="center" class="tableborder"> 
+<tr><td> 
+<table border="0" cellspacing="1" cellpadding="4" width="100%" align="center"> 
+<tr><td width="6%" class="header">&nbsp;</td>
+<td width="40%" class="header" align="center">论坛</td>
+<td width="8%" class="header" align="center">主题</td>
+<td width="8%" class="header" align="center">帖数</td>
+<td width="8%" class="header" align="center">在线</td>
+<td width="15%" class="header" align="center">最后发表</td>
+<td width="17%" class="header" align="center">版主</td>
+</tr>
+<tr align="center">
+<td bgcolor="#F8F8F8"><img src="/images/standard/forum.gif" border=0></td>
+<td bgcolor="#FFFFFF" align="left" class="item">
+<a href="forum-65-1.html"><img src="images/forumicon/money.gif" align="left" border="0"></a><a href="forum-65-1.html"><span class="bold"><font color=red>站庆专版</font></span></a>
+<br><span class="smalltxt">十年之后</span></td>
+<td bgcolor="#F8F8F8">788</td>
+<td bgcolor="#FFFFFF">17376</td>
+<td bgcolor="#FFFFFF">0</td>
+<td bgcolor="#F8F8F8">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr><td align="right" nowrap><span class="smalltxt" title="标题: 十一周年版衫总结贴(有礼品)">
+<a href="redirect.php?tid=10566005&goto=lastpost" title="标题: 
+十一周年版衫总结贴(有礼品)">2014-5-27 10:09 PM</a><br>by <a href="profile-username-bitkristy.html">bitkristy</a></span></td>
+<td nowrap>&nbsp;</td>
+</tr></table>
+</td><td bgcolor="#FFFFFF" style="word-break: keep-all"><a href="profile-username-%E9%CF%E9%AD%D3%CD.html">橄榄油</a>&nbsp;</td>
+</tr>
+<tr align="center">
+<td bgcolor="#F8F8F8"><img src="/images/standard/forum.gif" border=0></td>
+<td bgcolor="#FFFFFF" align="left" class="item">
+<a href="forum-106-1.html"><img src="images/forumicon/image.gif" align="left" border="0"></a><a href="forum-106-1.html"><span class="bold">个人展示区</span></a>
+<br><span class="smalltxt">欢迎大家踊跃贴自己PP,严禁人身攻击,尤其是MM的PP,一律要奉承~~~[本版为登陆会员可见,游客不可见]
+</span></td>
+<td bgcolor="#F8F8F8">2216</td>
+<td bgcolor="#FFFFFF">246273</td>
+<td bgcolor="#FFFFFF">5</td>
+<td bgcolor="#F8F8F8">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr><td align="right" nowrap><span class="smalltxt" title="标题: 靠谱男自爆诚意征友">
+<a href="redirect.php?tid=10523928&goto=lastpost" title="标题: 
+靠谱男自爆诚意征友">2014-6-6 11:06 PM</a><br>by <a href="profile-username-a522658424.html">a522658424</a></span></td>
+<td nowrap>&nbsp;</td>
+</tr></table>
+</td><td bgcolor="#FFFFFF" style="word-break: keep-all"><a href="profile-username-%CB%D5%B9%C2%C1%B9.html">苏孤凉</a>&nbsp;</td>
+</tr>
+<tr align="center">
+<td bgcolor="#F8F8F8"><img src="/images/standard/forum.gif" border=0></td>
+<td bgcolor="#FFFFFF" align="left" class="item">
+<a href="forum-122-1.html"><img src="images/forumicon/candle.gif" align="left" border="0"></a><a href="forum-122-1.html"><span class="bold">教工之家</span></a>
+<br><span class="smalltxt">平日一本正经的老师们也有可爱的一面哦</span></td>
+<td bgcolor="#F8F8F8">3656</td>
+<td bgcolor="#FFFFFF">68306</td>
+<td bgcolor="#FFFFFF">0</td>
+<td bgcolor="#F8F8F8">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr><td align="right" nowrap><span class="smalltxt" title="标题: 韩国博士生被指强奸学妹 因性器官畸形被判无罪">
+<a href="redirect.php?tid=10567843&goto=lastpost" title="标题: 
+韩国博士生被指强奸学妹 因性器官畸形被判无罪">2014-6-3 10:51 AM</a><br>by <a href="profile-username-%D0%D3%C1%B1%D4%DA%CD%FB.html">杏帘在望</a></span></td>
+<td nowrap>&nbsp;</td>
+</tr></table>
+</td><td bgcolor="#FFFFFF" style="word-break: keep-all"><a href="profile-username-%B9%FD%BF%CD%D6%AE%D2%BB.html">过客之一</a>, <a href="profile-username-%C9%C6%C8%E1.html">善柔</a>&nbsp;</td>
+</tr>
+<tr align="center">
+<td bgcolor="#F8F8F8"><img src="/images/standard/forum.gif" border=0></td>
+<td bgcolor="#FFFFFF" align="left" class="item">
+<a href="forum-66-1.html"><img src="images/forumicon/write.gif" align="left" border="0"></a><a href="forum-66-1.html"><span class="bold">原创文学</span></a>
+<br><span class="smalltxt">灌水也有精华，好东东就发这里吧...</span></td>
+<td bgcolor="#F8F8F8">1909</td>
+<td bgcolor="#FFFFFF">30676</td>
+<td bgcolor="#FFFFFF">0</td>
+<td bgcolor="#F8F8F8">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr><td align="right" nowrap><span class="smalltxt" title="标题: 【杨博士又陷入了深深的沉思】为什么恋爱后，温柔的女生会野蛮，野蛮的女生会温柔？">
+<a href="redirect.php?tid=10520028&goto=lastpost" title="标题: 
+【杨博士又陷入了深深的沉思】为什么恋爱后，温柔的女生会野蛮，野蛮的女生会温柔？">2014-5-27 07:28 PM</a><br>by <a href="profile-username-bisbald.html">bisbald</a></span></td>
+<td nowrap>&nbsp;</td>
+</tr></table>
+</td><td bgcolor="#FFFFFF" style="word-break: keep-all"><a href="profile-username-%C9%C6%C8%E1.html">善柔</a>&nbsp;</td>
+</tr>
+</table></td></tr></table><br><br><form method="post" name="multipleact" action="topicadminmu.php?fid=14&page=1">
+<table width="97%" cellspacing="0" cellpadding="0" align="center">
+<tr><td class="multi"><table cellspacing="0" cellpadding="0" border="0"><tr><td height="3"></td></tr><tr><td><table cellspacing="1" cellpadding="3" class="tableborder"><tr bgcolor="#F8F8F8" class="smalltxt"><td class="header">&nbsp;240452&nbsp;</td><td class="header">&nbsp;1/12023&nbsp;</td><td bgcolor="#FFFFFF">&nbsp;<u><b>1</b></u>&nbsp;</td><td>&nbsp;<a href="forum-14-2.html">2</a>&nbsp;</td><td>&nbsp;<a href="forum-14-3.html">3</a>&nbsp;</td><td>&nbsp;<a href="forum-14-4.html">4</a>&nbsp;</td><td>&nbsp;<a href="forum-14-5.html">5</a>&nbsp;</td><td>&nbsp;<a href="forum-14-6.html">6</a>&nbsp;</td><td>&nbsp;<a href="forum-14-7.html">7</a>&nbsp;</td><td>&nbsp;<a href="forum-14-8.html">8</a>&nbsp;</td><td>&nbsp;<a href="forum-14-9.html">9</a>&nbsp;</td><td>&nbsp;<a href="forum-14-10.html">10</a>&nbsp;</td><td>&nbsp;<a href="forum-14-2.html">&gt;</a>&nbsp;</td><td>&nbsp;<a href="forum-14-12023.html">&gt;<b>|</b></a>&nbsp;</td><td><input type="text" name="custompage" size="2" style="border: 1px solid #698CC3" ></td></tr></table></td></tr><tr><td height="3"></td></tr></table></td>
+<td align="right">
+选择分类：
+<select onchange="if($(this).val()!=0) {location.href='forumdisplay.php?fid=14&page=1&tag='+$(this).val() } else {location.href='forum-14-1.html'}">
+<option value="0">查看全部</option>
+<option value="221">└[原创]</option>
+<option value="507">└─[故事]</option>
+<option value="508">└─[经验]</option>
+<option value="537">└─[担当]</option>
+<option value="511">└─[其他]</option>
+<option value="222">└[转载]</option>
+<option value="506">└[分享]</option>
+<option value="622">└─[今日理工]</option>
+<option value="623">└─[人在北理]</option>
+<option value="639">└─[校队]</option>
+<option value="638">└─[一图流]</option>
+<option value="450">└[求助]</option>
+<option value="505">└[XY]</option>
+<option value="322">└[召唤]</option>
+<option value="324">└─[BG]</option>
+<option value="323">└─[FB]</option>
+<option value="325">└─[活动]</option>
+<option value="509">└─[祝福]</option>
+<option value="326">└─[其他]</option>
+<option value="512">└[感言]</option>
+<option value="513">└─[毕业]</option>
+<option value="593">└─[苦水]</option>
+<option value="514">└─[情感]</option>
+<option value="515">└─[其他]</option>
+<option value="207">└[征友]</option>
+<option value="208">└─[本人]</option>
+<option value="330">└─[代挂]</option>
+<option value="209">└─[外站]</option>
+<option value="424">└[专刊]</option>
+<option value="425">└─[图说]</option>
+<option value="640">└[活该]</option>
+<option value="173">└[备查]</option>
+<option value="168">└[通知公告]</option>
+<option value="684">└<font color=red>[有奖活动]</font></option>
+<option value="620">└[公告陈列室]</option>
+<option value="371">└[其他]</option>
+</select>
+</td>
+<td align="right">
+<a href="post.php?action=newthread&fid=14&fpage=1"><img src="/images/standard/newtopic.gif" border="0"></a>
+&nbsp;<a href="post.php?action=newthread&fid=14&fpage=1&poll=yes"><img src="/images/standard/poll.gif" border="0"></a>
+</td></tr></table>
+
+<table cellspacing="0" cellpadding="0" border="0" width="97%" align="center" bgcolor="#698CC3" class="tableborder"><tr><td>
+<table border="0" cellspacing="1" cellpadding="4" width="100%" >
+<tr>
+<td class="header" width="4%">&nbsp;</td>
+<td class="header" width="4%">&nbsp;</td>
+<td class="header" width="50%" align="center">标题</td>
+<td class="header" width="14%" align="center">作者</td>
+<td class="header" width="6%" align="center">回复</td>
+<td class="header" width="6%" align="center">查看</td>
+<td class="header" width="16%" align="center">最后发表</td>
+</tr>
+<tr><td class="category">&nbsp;</td><td colspan="6" class="category"><span class="bold">重要主题</span></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10510780-1-1.html" target="_blank"
+><img src="/images/standard/lock_folder.gif" alt="C" border="0"></a></td>
+<td id="tr1" tid="10510780" align="center">&nbsp;</td>
+<td class="item">
+<img src="/images/standard/headtopic_3.gif" align="absmiddle">
+<a href="thread-10510780-1-1.html" style="color: red">联盟各板块介绍及版规汇总</a> <a href="redirect.php?tid=10510780&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-87339.html">mylangtao</a>
+<br><span class="smalltxt">2013-3-1</span></td>
+<td bgcolor="#FFFFFF" align="center">1</td>
+<td bgcolor="#F8F8F8" align="center">2267</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-4-25 09:00 PM<br>
+by 
+<a href="profile-username-mylangtao.html">mylangtao</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-24238-1-1.html" target="_blank"
+><img src="/images/standard/hot_red_folder.gif" alt="" border="0"></a></td>
+<td id="tr2" tid="24238" align="center">&nbsp;</td>
+<td class="item">
+<img src="/images/standard/headtopic_1.gif" align="absmiddle">
+<a href="thread-24238-1-1.html" style="font-weight: bold;color: red">版规及加分申请贴</a>&nbsp; &nbsp;( <img src="/images/standard/multipage.gif" align="absmiddle" boader="0"> <a href="thread-24238-1-1.html">1</a> <a href="thread-24238-2-1.html">2</a> <a href="thread-24238-3-1.html">3</a> <a href="thread-24238-4-1.html">4</a> <a href="thread-24238-5-1.html">5</a> <a href="thread-24238-6-1.html">6</a>  .. <a href="thread-24238-17-1.html">17</a> ) <a href="redirect.php?tid=24238&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-389.html">QiuYanShu</a>
+<br><span class="smalltxt">2003-9-1</span></td>
+<td bgcolor="#FFFFFF" align="center">166</td>
+<td bgcolor="#F8F8F8" align="center">58604</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2013-12-19 02:43 PM<br>
+by 
+<a href="profile-username-%BF%D7%C3%F7.html">孔明</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10526403-1-1.html" target="_blank"
+><img src="/images/standard/lock_folder.gif" alt="C" border="0"></a></td>
+<td id="tr3" tid="10526403" align="center">&nbsp;</td>
+<td class="item">
+<img src="/images/standard/headtopic_1.gif" align="absmiddle">
+<a href="thread-10526403-1-1.html" style="font-weight: bold;color: orange">关于水区连发“需向版主申请的特殊情况”的说明</a> <a href="redirect.php?tid=10526403&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-40508.html">vickyvicky</a>
+<br><span class="smalltxt">2013-6-7</span></td>
+<td bgcolor="#FFFFFF" align="center">0</td>
+<td bgcolor="#F8F8F8" align="center">582</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2013-9-11 11:44 AM<br>
+by 
+<a href="profile-username-vickyvicky.html">vickyvicky</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10498674-1-1.html" target="_blank"
+><img src="/images/standard/lock_folder.gif" alt="C" border="0"></a></td>
+<td id="tr4" tid="10498674" align="center">&nbsp;</td>
+<td class="item">
+<img src="/images/standard/headtopic_1.gif" align="absmiddle">
+<a href="thread-10498674-1-1.html" style="font-weight: bold;color: orange">[专版专用]即日起水版所有与校园网相关话题直接回收</a> <a href="redirect.php?tid=10498674&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-77820.html">仓田佐佑理</a>
+<br><span class="smalltxt">2012-11-26</span></td>
+<td bgcolor="#FFFFFF" align="center">0</td>
+<td bgcolor="#F8F8F8" align="center">1186</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2012-11-27 11:04 PM<br>
+by 
+<a href="profile-username-mylangtao.html">mylangtao</a>
+</font></td></tr></table></td></tr>
+<tr><td class="category">&nbsp;</td><td colspan="6" class="category"><span class="bold">普通主题</span></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568211-1-1.html" target="_blank"
+><img src="/images/standard/hot_folder.gif" alt="" border="0"></a></td>
+<td id="tr5" tid="10568211" align="center">&nbsp;</td>
+<td class="item">
+<a href="forumdisplay.php?fid=14&tag=221" style="font-weight:bold;">[原创]</a><a href="thread-10568211-1-1.html" >求推荐感人爱情电影和爱情电视剧</a>&nbsp; &nbsp;( <img src="/images/standard/multipage.gif" align="absmiddle" boader="0"> <a href="thread-10568211-1-1.html">1</a> <a href="thread-10568211-2-1.html">2</a> <a href="thread-10568211-3-1.html">3</a> <a href="thread-10568211-4-1.html">4</a> ) <a href="redirect.php?tid=10568211&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-110034.html">小麦子</a>
+<br><span class="smalltxt">2014-6-5</span></td>
+<td bgcolor="#FFFFFF" align="center">34</td>
+<td bgcolor="#F8F8F8" align="center">822</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-7 12:23 AM<br>
+by 
+<a href="profile-username-%D3%F9%B7%E7%D5%DF.html">御风者</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568327-1-1.html" target="_blank"
+><img src="/images/standard/hot_red_folder.gif" alt="" border="0"></a></td>
+<td id="tr6" tid="10568327" align="center">&nbsp;</td>
+<td class="item">
+<a href="forumdisplay.php?fid=14&tag=222" style="font-weight:bold;">[转载]</a><a href="thread-10568327-1-1.html" >解决谷歌学术上不了的问题</a>&nbsp; &nbsp;( <img src="/images/standard/multipage.gif" align="absmiddle" boader="0"> <a href="thread-10568327-1-1.html">1</a> <a href="thread-10568327-2-1.html">2</a> <a href="thread-10568327-3-1.html">3</a> ) <a href="redirect.php?tid=10568327&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-133514.html">两介匹夫</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">20</td>
+<td bgcolor="#F8F8F8" align="center">505</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-7 12:19 AM<br>
+by 
+<a href="profile-username-hliya.html">hliya</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568344-1-1.html" target="_blank"
+><img src="/images/standard/folder.gif" alt="" border="0"></a></td>
+<td id="tr7" tid="10568344" align="center">&nbsp;</td>
+<td class="item">
+<a href="thread-10568344-1-1.html" >体育课考试时，不知道哪个逗比说脱了内裤跑会比较快</a> <a href="redirect.php?tid=10568344&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-121498.html">贵妃一身肉</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">4</td>
+<td bgcolor="#F8F8F8" align="center">336</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-7 12:03 AM<br>
+by 
+<a href="profile-username-hoffnung728.html">hoffnung728</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568222-1-1.html" target="_blank"
+><img src="/images/standard/hot_folder.gif" alt="" border="0"></a></td>
+<td id="tr8" tid="10568222" align="center">&nbsp;</td>
+<td class="item">
+<a href="forumdisplay.php?fid=14&tag=221" style="font-weight:bold;">[原创]</a><a href="thread-10568222-1-1.html" >现在的男生都不想结婚吗？</a>&nbsp; &nbsp;( <img src="/images/standard/multipage.gif" align="absmiddle" boader="0"> <a href="thread-10568222-1-1.html">1</a> <a href="thread-10568222-2-1.html">2</a> <a href="thread-10568222-3-1.html">3</a> <a href="thread-10568222-4-1.html">4</a> <a href="thread-10568222-5-1.html">5</a> <a href="thread-10568222-6-1.html">6</a>  .. <a href="thread-10568222-14-1.html">14</a> ) <a href="redirect.php?tid=10568222&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-125800.html">Melody</a>
+<br><span class="smalltxt">2014-6-5</span></td>
+<td bgcolor="#FFFFFF" align="center">134</td>
+<td bgcolor="#F8F8F8" align="center">6539</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-7 12:02 AM<br>
+by 
+<a href="profile-username-%C9%EE%B0%AE%C1%B9%BA%A3.html">深爱凉海</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568322-1-1.html" target="_blank"
+><img src="/images/standard/hot_folder.gif" alt="" border="0"></a></td>
+<td id="tr9" tid="10568322" align="center">&nbsp;</td>
+<td class="item">
+<a href="thread-10568322-1-1.html" >瞬间挡箭牌全没了。。。亚历山大</a>&nbsp; &nbsp;( <img src="/images/standard/multipage.gif" align="absmiddle" boader="0"> <a href="thread-10568322-1-1.html">1</a> <a href="thread-10568322-2-1.html">2</a> ) <a href="redirect.php?tid=10568322&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-32731.html">刘西普</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">11</td>
+<td bgcolor="#F8F8F8" align="center">849</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-7 12:02 AM<br>
+by 
+<a href="profile-username-sonyfe25cp.html">sonyfe25cp</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568339-1-1.html" target="_blank"
+><img src="/images/standard/red_folder.gif" alt="" border="0"></a></td>
+<td id="tr10" tid="10568339" align="center">&nbsp;</td>
+<td class="item">
+<a href="forumdisplay.php?fid=14&tag=506" style="font-weight:bold;">[分享]</a><a href="forumdisplay.php?fid=14&tag=623" style="font-weight:bold;">[人在北理]</a><a href="thread-10568339-1-1.html" ><img src="images/attachicon/image.gif" align="absmiddle" border="0"> 欢迎各省优质青年报考【北京理工大学】。。。。。。。。。。。。。。。。。</a> <a href="redirect.php?tid=10568339&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-133695.html">一顶绿树</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">6</td>
+<td bgcolor="#F8F8F8" align="center">354</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-6 11:58 PM<br>
+by 
+<a href="profile-username-%CC%EC%B2%D4%D2%B0%C3%A3.html">天苍野茫</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568302-1-1.html" target="_blank"
+><img src="/images/standard/hot_red_folder.gif" alt="" border="0"></a></td>
+<td id="tr11" tid="10568302" align="center">&nbsp;</td>
+<td class="item">
+<a href="thread-10568302-1-1.html" >[牢骚贴]BIT的社会影响力下滑成这样了啊。。。。</a>&nbsp; &nbsp;( <img src="/images/standard/multipage.gif" align="absmiddle" boader="0"> <a href="thread-10568302-1-1.html">1</a> <a href="thread-10568302-2-1.html">2</a> <a href="thread-10568302-3-1.html">3</a> <a href="thread-10568302-4-1.html">4</a> ) <a href="redirect.php?tid=10568302&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-72667.html">duq8009</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">36</td>
+<td bgcolor="#F8F8F8" align="center">2685</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-6 11:46 PM<br>
+by 
+<a href="profile-username-yyz999.html">yyz999</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568351-1-1.html" target="_blank"
+><img src="/images/standard/red_folder.gif" alt="" border="0"></a></td>
+<td id="tr12" tid="10568351" align="center">&nbsp;</td>
+<td class="item">
+<a href="forumdisplay.php?fid=14&tag=450" style="font-weight:bold;">[求助]</a><a href="thread-10568351-1-1.html" >设计学院在哪？</a> <a href="redirect.php?tid=10568351&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-131245.html">wang0309251</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">0</td>
+<td bgcolor="#F8F8F8" align="center">37</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-6 11:44 PM<br>
+by 
+<a href="profile-username-wang0309251.html">wang0309251</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568316-1-1.html" target="_blank"
+><img src="/images/standard/hot_red_folder.gif" alt="" border="0"></a></td>
+<td id="tr13" tid="10568316" align="center">&nbsp;</td>
+<td class="item">
+<a href="forumdisplay.php?fid=14&tag=221" style="font-weight:bold;">[原创]</a><a href="thread-10568316-1-1.html" >明天高考，以后没这么容易了~</a>&nbsp; &nbsp;( <img src="/images/standard/multipage.gif" align="absmiddle" boader="0"> <a href="thread-10568316-1-1.html">1</a> <a href="thread-10568316-2-1.html">2</a> ) <a href="redirect.php?tid=10568316&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-80890.html">dachun</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">10</td>
+<td bgcolor="#F8F8F8" align="center">797</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-6 11:43 PM<br>
+by 
+<a href="profile-username-countryman.html">countryman</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10567338-1-1.html" target="_blank"
+><img src="/images/standard/hot_red_folder.gif" alt="" border="0"></a></td>
+<td id="tr14" tid="10567338" align="center">&nbsp;</td>
+<td class="item">
+<a href="forumdisplay.php?fid=14&tag=207" style="font-weight:bold;">[征友]</a><a href="forumdisplay.php?fid=14&tag=330" style="font-weight:bold;">[代挂]</a><a href="thread-10567338-1-1.html" ><img src="images/attachicon/image.gif" align="absmiddle" border="0"> 90年山东小伙诚征女友（代挂）</a>&nbsp; &nbsp;( <img src="/images/standard/multipage.gif" align="absmiddle" boader="0"> <a href="thread-10567338-1-1.html">1</a> <a href="thread-10567338-2-1.html">2</a> <a href="thread-10567338-3-1.html">3</a> <a href="thread-10567338-4-1.html">4</a> <a href="thread-10567338-5-1.html">5</a> ) <a href="redirect.php?tid=10567338&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-131816.html">bit20090750</a>
+<br><span class="smalltxt">2014-5-29</span></td>
+<td bgcolor="#FFFFFF" align="center">48</td>
+<td bgcolor="#F8F8F8" align="center">5449</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-6 11:27 PM<br>
+by 
+<a href="profile-username-iliebeyou.html">iliebeyou</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568274-1-1.html" target="_blank"
+><img src="/images/standard/hot_red_folder.gif" alt="" border="0"></a></td>
+<td id="tr15" tid="10568274" align="center">&nbsp;</td>
+<td class="item">
+<a href="thread-10568274-1-1.html" >[求助] 恋爱那些事儿 之 约会</a>&nbsp; &nbsp;( <img src="/images/standard/multipage.gif" align="absmiddle" boader="0"> <a href="thread-10568274-1-1.html">1</a> <a href="thread-10568274-2-1.html">2</a> <a href="thread-10568274-3-1.html">3</a> <a href="thread-10568274-4-1.html">4</a> <a href="thread-10568274-5-1.html">5</a> <a href="thread-10568274-6-1.html">6</a> ) <a href="redirect.php?tid=10568274&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-118421.html">wzwang</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">52</td>
+<td bgcolor="#F8F8F8" align="center">2682</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-6 11:24 PM<br>
+by 
+<a href="profile-username-bladelh.html">bladelh</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568347-1-1.html" target="_blank"
+><img src="/images/standard/red_folder.gif" alt="" border="0"></a></td>
+<td id="tr16" tid="10568347" align="center">&nbsp;</td>
+<td class="item">
+<a href="thread-10568347-1-1.html" >[创业召集]车联网创业，侧重于移动互联平台+智能车载硬件</a> <a href="redirect.php?tid=10568347&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-81639.html">florist7th</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">2</td>
+<td bgcolor="#F8F8F8" align="center">44</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-6 11:21 PM<br>
+by 
+<a href="profile-username-florist7th.html">florist7th</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568343-1-1.html" target="_blank"
+><img src="/images/standard/red_folder.gif" alt="" border="0"></a></td>
+<td id="tr17" tid="10568343" align="center">&nbsp;</td>
+<td class="item">
+<a href="forumdisplay.php?fid=14&tag=222" style="font-weight:bold;">[转载]</a><a href="thread-10568343-1-1.html" >【黑·冰火】魔山毒蛇PK结果剧透</a> <a href="redirect.php?tid=10568343&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-94737.html">lovecp3</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">5</td>
+<td bgcolor="#F8F8F8" align="center">127</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-6 11:18 PM<br>
+by 
+<a href="profile-username-KobeBryant.html">KobeBryant</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568346-1-1.html" target="_blank"
+><img src="/images/standard/red_folder.gif" alt="" border="0"></a></td>
+<td id="tr18" tid="10568346" align="center">&nbsp;</td>
+<td class="item">
+<a href="forumdisplay.php?fid=14&tag=221" style="font-weight:bold;">[原创]</a><a href="forumdisplay.php?fid=14&tag=511" style="font-weight:bold;">[其他]</a><a href="thread-10568346-1-1.html" >啥时候有毕业书市？</a> <a href="redirect.php?tid=10568346&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-124736.html">忆梦的梦</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">2</td>
+<td bgcolor="#F8F8F8" align="center">70</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-6 11:12 PM<br>
+by 
+<a href="profile-username-%C4%CB%B2%E8.html">乃茶</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568336-1-1.html" target="_blank"
+><img src="/images/standard/red_folder.gif" alt="" border="0"></a></td>
+<td id="tr19" tid="10568336" align="center">&nbsp;</td>
+<td class="item">
+<a href="forumdisplay.php?fid=14&tag=221" style="font-weight:bold;">[原创]</a><a href="forumdisplay.php?fid=14&tag=537" style="font-weight:bold;">[担当]</a><a href="thread-10568336-1-1.html" >对不起，满满的负能量——我拿什么拯救你，我的祖国！</a> <a href="redirect.php?tid=10568336&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-90984.html">sishui</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">6</td>
+<td bgcolor="#F8F8F8" align="center">401</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-6 11:05 PM<br>
+by 
+<a href="profile-username-%C2%E4%C4%AF.html">落寞</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568304-1-1.html" target="_blank"
+><img src="/images/standard/hot_red_folder.gif" alt="" border="0"></a></td>
+<td id="tr20" tid="10568304" align="center">&nbsp;</td>
+<td class="item">
+<a href="forumdisplay.php?fid=14&tag=424" style="font-weight:bold;">[专刊]</a><a href="forumdisplay.php?fid=14&tag=425" style="font-weight:bold;">[图说]</a><a href="thread-10568304-1-1.html" >【喷嚏图卦20140606】老胡总体上还是爱国的，我也一直很尊敬他</a>&nbsp; &nbsp;( <img src="/images/standard/multipage.gif" align="absmiddle" boader="0"> <a href="thread-10568304-1-1.html">1</a> <a href="thread-10568304-2-1.html">2</a> ) <a href="redirect.php?tid=10568304&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-120850.html">图说</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">11</td>
+<td bgcolor="#F8F8F8" align="center">1089</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-6 10:47 PM<br>
+by 
+<a href="profile-username-Seraphium.html">Seraphium</a>
+</font></td></tr></table></td></tr>
+<tr>
+<td bgcolor="#FFFFFF" align="center"><a href="thread-10568334-1-1.html" target="_blank"
+><img src="/images/standard/folder.gif" alt="" border="0"></a></td>
+<td id="tr21" tid="10568334" align="center">&nbsp;</td>
+<td class="item">
+<a href="thread-10568334-1-1.html" ><img src="images/attachicon/image.gif" align="absmiddle" border="0"> 据说你们这些博士在读期间年收入都有十几二十万</a> <a href="redirect.php?tid=10568334&goto=lastpost" class="new">New</a>
+</td><td bgcolor="#F8F8F8" align="center">
+<a href="profile-uid-102023.html">洛丽塔</a>
+<br><span class="smalltxt">2014-6-6</span></td>
+<td bgcolor="#FFFFFF" align="center">5</td>
+<td bgcolor="#F8F8F8" align="center">669</td>
+<td bgcolor="#FFFFFF">
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr align="right">
+<td nowrap><font class="smalltxt">2014-6-6 10:32 PM<br>
+by 
+<a href="profile-username-ydhong1986.html">ydhong1986</a>
+</font></td></tr></table></td></tr>
+</table></td></tr></table>
+<script>
+$("td.item").mouseover(function(){$(this).css({background:"#F8F8F8"})}).mouseout(function(){$(this).css({background:"#FFFFFF"})});
+</script>
+<table width="97%" cellspacing="0" cellpadding="0" align="center">
+<tr><td valign="top"><table cellspacing="0" cellpadding="0" border="0"><tr><td height="3"></td></tr><tr><td><table cellspacing="1" cellpadding="3" class="tableborder"><tr bgcolor="#F8F8F8" class="smalltxt"><td class="header">&nbsp;240452&nbsp;</td><td class="header">&nbsp;1/12023&nbsp;</td><td bgcolor="#FFFFFF">&nbsp;<u><b>1</b></u>&nbsp;</td><td>&nbsp;<a href="forum-14-2.html">2</a>&nbsp;</td><td>&nbsp;<a href="forum-14-3.html">3</a>&nbsp;</td><td>&nbsp;<a href="forum-14-4.html">4</a>&nbsp;</td><td>&nbsp;<a href="forum-14-5.html">5</a>&nbsp;</td><td>&nbsp;<a href="forum-14-6.html">6</a>&nbsp;</td><td>&nbsp;<a href="forum-14-7.html">7</a>&nbsp;</td><td>&nbsp;<a href="forum-14-8.html">8</a>&nbsp;</td><td>&nbsp;<a href="forum-14-9.html">9</a>&nbsp;</td><td>&nbsp;<a href="forum-14-10.html">10</a>&nbsp;</td><td>&nbsp;<a href="forum-14-2.html">&gt;</a>&nbsp;</td><td>&nbsp;<a href="forum-14-12023.html">&gt;<b>|</b></a>&nbsp;</td><td><input type="text" name="custompage" size="2" style="border: 1px solid #698CC3" ></td></tr></table></td></tr><tr><td height="3"></td></tr></table></td>
+<td align="right">
+选择分类：
+<select onchange="if($(this).val()!=0) {location.href='forumdisplay.php?fid=14&page=1&tag='+$(this).val() } else {location.href='forum-14-1.html'}">
+<option value="0">查看全部</option>
+<option value="221">└[原创]</option>
+<option value="507">└─[故事]</option>
+<option value="508">└─[经验]</option>
+<option value="537">└─[担当]</option>
+<option value="511">└─[其他]</option>
+<option value="222">└[转载]</option>
+<option value="506">└[分享]</option>
+<option value="622">└─[今日理工]</option>
+<option value="623">└─[人在北理]</option>
+<option value="639">└─[校队]</option>
+<option value="638">└─[一图流]</option>
+<option value="450">└[求助]</option>
+<option value="505">└[XY]</option>
+<option value="322">└[召唤]</option>
+<option value="324">└─[BG]</option>
+<option value="323">└─[FB]</option>
+<option value="325">└─[活动]</option>
+<option value="509">└─[祝福]</option>
+<option value="326">└─[其他]</option>
+<option value="512">└[感言]</option>
+<option value="513">└─[毕业]</option>
+<option value="593">└─[苦水]</option>
+<option value="514">└─[情感]</option>
+<option value="515">└─[其他]</option>
+<option value="207">└[征友]</option>
+<option value="208">└─[本人]</option>
+<option value="330">└─[代挂]</option>
+<option value="209">└─[外站]</option>
+<option value="424">└[专刊]</option>
+<option value="425">└─[图说]</option>
+<option value="640">└[活该]</option>
+<option value="173">└[备查]</option>
+<option value="168">└[通知公告]</option>
+<option value="684">└<font color=red>[有奖活动]</font></option>
+<option value="620">└[公告陈列室]</option>
+<option value="371">└[其他]</option>
+</select>
+</td>
+<td align="right">
+<a href="post.php?action=newthread&fid=14&fpage=1"><img src="/images/standard/newtopic.gif" border="0"></a>
+&nbsp;<a href="post.php?action=newthread&fid=14&fpage=1&poll=yes"><img src="/images/standard/poll.gif" border="0"></a>
+</td></tr>
+</table>
+</form>
+<br />
+<script language="JavaScript">
+var postmaxchars = 10000;
+var isadmin = 0;
+function validate(theform) {
+if (theform.newthread.disabled) return false;
+    if (theform.subject.value == "" || theform.message.value == "") {
+    	alert("请完成标题和内容栏。");
+    	return false; 
+    }
+    if (postmaxchars != 0 && isadmin != 1) {
+if (theform.message.value.length > 10000) {
+alert("您的帖子长度超过限制\n\n当前长度: "+theform.message.value.length+" 字节\n系统允许: 10000 字节");
+return false;
+}
+}
+if ($('#tag').val() > 0) {
+var tagflag = $('#topictag_' + $('#tag').val()).attr('flag');
+if ((tagflag & 4) && !ismoderator) {
+alert("你无权使用该分类");
+return false;
+} else if (!(tagflag & 2)) {
+alert("该分类不允许发表话题");
+return false;
+}
+}
+theform.newthread.disabled = true;
+return true;
+}
+</script>
+<form method="post" name="input" action="post.php?action=newthread&fid=14" enctype="multipart/form-data" onSubmit="return validate(this)">
+<input type="hidden" name="topicsubmit" value="submit">
+<input type="hidden" name="fpage" value="1">
+<table cellspacing="0" cellpadding="0" border="0" width="97%" align="center" bgcolor="#698CC3" class="tableborder"><tr><td>
+<table border="0" cellspacing="1" cellpadding="4" width="100%">
+<tr><td colspan="2" class="header">快速发新话题</td></tr>
+<tr>
+<td bgcolor="#F8F8F8" width="18%">选择分类:</td>
+<td bgcolor="#FFFFFF">
+<select name="tag" id="tag">
+<option value="0">无分类</option>
+<option value="221" id="topictag_221" flag="2">└[原创]</option>
+<option value="507" id="topictag_507" flag="2">└─[故事]</option>
+<option value="508" id="topictag_508" flag="2">└─[经验]</option>
+<option value="537" id="topictag_537" flag="2">└─[担当]</option>
+<option value="511" id="topictag_511" flag="2">└─[其他]</option>
+<option value="222" id="topictag_222" flag="2">└[转载]</option>
+<option value="506" id="topictag_506" flag="2">└[分享]</option>
+<option value="622" id="topictag_622" flag="2">└─[今日理工]</option>
+<option value="623" id="topictag_623" flag="2">└─[人在北理]</option>
+<option value="639" id="topictag_639" flag="2">└─[校队]</option>
+<option value="638" id="topictag_638" flag="2">└─[一图流]</option>
+<option value="450" id="topictag_450" flag="2">└[求助]</option>
+<option value="505" id="topictag_505" flag="2">└[XY]</option>
+<option value="322" id="topictag_322" flag="0">└[召唤]</option>
+<option value="324" id="topictag_324" flag="2">└─[BG]</option>
+<option value="323" id="topictag_323" flag="2">└─[FB]</option>
+<option value="325" id="topictag_325" flag="2">└─[活动]</option>
+<option value="509" id="topictag_509" flag="2">└─[祝福]</option>
+<option value="326" id="topictag_326" flag="2">└─[其他]</option>
+<option value="512" id="topictag_512" flag="0">└[感言]</option>
+<option value="513" id="topictag_513" flag="2">└─[毕业]</option>
+<option value="593" id="topictag_593" flag="2">└─[苦水]</option>
+<option value="514" id="topictag_514" flag="2">└─[情感]</option>
+<option value="515" id="topictag_515" flag="2">└─[其他]</option>
+<option value="207" id="topictag_207" flag="0">└[征友]</option>
+<option value="208" id="topictag_208" flag="2">└─[本人]</option>
+<option value="330" id="topictag_330" flag="2">└─[代挂]</option>
+<option value="209" id="topictag_209" flag="2">└─[外站]</option>
+<option value="424" id="topictag_424" flag="0">└[专刊]</option>
+<option value="425" id="topictag_425" flag="2">└─[图说]</option>
+<option value="640" id="topictag_640" flag="2">└[活该]</option>
+<option value="173" id="topictag_173" flag="0">└[备查]</option>
+<option value="168" id="topictag_168" flag="6">└[通知公告]</option>
+<option value="684" id="topictag_684" flag="6">└<font color=red>[有奖活动]</font></option>
+<option value="620" id="topictag_620" flag="0">└[公告陈列室]</option>
+<option value="371" id="topictag_371" flag="2">└[其他]</option>
+</select>
+</td>
+</tr>
+<tr>
+<td width="18%" bgcolor="#F8F8F8">标题:</td>
+<td width="82%" bgcolor="#FFFFFF"><input type="text" name="subject" size="80" value="" tabindex="1" style="width:80%"></td>
+</tr>
+<tr>
+<td width="18%" bgcolor="#F8F8F8" valign="top">选项:<br><span class="smalltxt">
+<label><input type="checkbox" name="parseurloff" value="1"> 禁用 URL 识别</label><br>
+<label><input type="checkbox" name="smileyoff" value="1" > 禁用 <a href="faq.php?page=messages#6" target="_blank">Smilies</a></label><br>
+<label><input type="checkbox" name="bbcodeoff" value="1" > 禁用 <a href="faq.php?page=misc#1" target="_blank">Discuz! 代码</a></label><br>
+<label><input type="checkbox" name="usesig" value="1" checked> 使用个人签名</label><br>
+<label><input type="checkbox" name="emailnotify" value="1"> 接收新回复邮件通知</span></label>
+</td>
+<td width="82%" bgcolor="#FFFFFF" valign="middle" class="smalltxt"><textarea rows="7" cols="90" name="message" onKeyDown="ctlent(event);" tabindex="2" style="width:80%;"></textarea><br>
+<input type="submit" name="newthread" value="发表帖子" tabindex="3" class="blue_button">&nbsp; &nbsp;
+<input type="submit" name="previewpost" value="预览帖子" tabindex="4" class="blue_button">&nbsp; &nbsp;
+<input type="button" value="插入表情" tabindex="5" class="blue_button" onclick="javascript:window.open('smilies.php', 'smilies', 'toolbar=no, scrollbars=yes, resizable=yes, height=600, width=790')">&nbsp; &nbsp;
+<input type="reset" name="topicsreset" value="清空内容" tabindex="6" class="blue_button">&nbsp; &nbsp;[完成后可按 Ctrl+Enter 发布]
+</td>
+</tr>
+<tr>
+<td width="18%" bgcolor="#F8F8F8">上传附件[或贴图]:</td>
+<td width="82%" bgcolor="#FFFFFF" class="smalltxt"><input type="file" name="attach" size="20"> &nbsp; (可选) 限制积分: <input type="text" name="attachperm" value="0" size="5">(0为不限制)<br><font color="red">注意: 严禁上传与主题无关的附件，情节严重者将被扣分。</font></td>
+</tr>
+</table></td></tr></table></form>
+<br>
+<form method="post" action="forumdisplay.php?fid=14">
+<table width="97%" cellspacing="0" cellpadding="0" align="center">
+<tr class="mediumtxt"><td align="left" class="smalltxt">
+<span class="bold">论坛跳转: </span>
+<select onchange="if(this.options[this.selectedIndex].value != '') {
+window.location=('forumdisplay.php?fid='+this.options[this.selectedIndex].value+'&') }">
+<option value="">系统管理区</option><option value="3">&nbsp; &gt; 联盟公告版</option><option value="4">&nbsp; &gt; 联盟意见箱</option><option value="121">&nbsp; &nbsp; &nbsp; &gt; 处罚通告</option><option value="170">&nbsp; &gt; 后台管理区</option><option value="92">&nbsp; &gt; 新手交流区</option><option value="120">&nbsp; &nbsp; &nbsp; &gt; 积分恢复申请</option><option value="">&nbsp;</option><option value="">直通理工区</option><option value="108">&nbsp; &gt; 校园求助热线</option><option value="59">&nbsp; &gt; 叫卖场</option><option value="114">&nbsp; &nbsp; &nbsp; &gt; 联盟旺铺</option><option value="145">&nbsp; &nbsp; &nbsp; &gt; 团购专区</option><option value="93">&nbsp; &nbsp; &nbsp; &gt; 已完成交易记录</option><option value="83">&nbsp; &gt; 前程似锦</option><option value="117">&nbsp; &nbsp; &nbsp; &gt; 考研兄弟连</option><option value="153">&nbsp; &nbsp; &nbsp; &gt; 兼职信息</option><option value="150">&nbsp; &gt; 海外BITer</option><option value="89">&nbsp; &gt; 外语园地</option><option value="151">&nbsp; &gt; 知识海报</option><option value="">&nbsp;</option><option value="">时尚生活区</option><option value="167">&nbsp; &gt; 购前咨询</option><option value="80">&nbsp; &gt; 硬件与数码时尚</option><option value="168">&nbsp; &gt; 驴游四海</option><option value="116">&nbsp; &gt; 摄影与艺术</option><option value="140">&nbsp; &gt; 车行天下</option><option value="96">&nbsp; &gt; 生活会馆</option><option value="">&nbsp;</option><option value="">技术讨论区</option><option value="10">&nbsp; &gt; 网络技术与信息</option><option value="84">&nbsp; &gt; GNU/Linux 交流区</option><option value="101">&nbsp; &gt; 嵌入式开发技术</option><option value="113">&nbsp; &nbsp; &nbsp; &gt; 嵌入式 LiNUX 开发</option><option value="32">&nbsp; &gt; 程序员集中营</option><option value="21">&nbsp; &gt; 软件使用与交流</option><option value="107">&nbsp; &nbsp; &nbsp; &gt; 新软交流区</option><option value="">&nbsp;</option><option value="">苦中作乐区</option><option value="22">&nbsp; &gt; 游戏人生</option><option value="23">&nbsp; &gt; 影视天地</option><option value="25">&nbsp; &gt; 音乐殿堂</option><option value="14">&nbsp; &gt; 灌水乐园</option><option value="65">&nbsp; &nbsp; &nbsp; &gt; 站庆专版</option><option value="106">&nbsp; &nbsp; &nbsp; &gt; 个人展示区</option><option value="122">&nbsp; &nbsp; &nbsp; &gt; 教工之家</option><option value="66">&nbsp; &nbsp; &nbsp; &gt; 原创文学</option><option value="24">&nbsp; &gt; 贴图欣赏</option><option value="27">&nbsp; &gt; 动漫天空</option><option value="63">&nbsp; &nbsp; &nbsp; &gt; 动漫美图</option><option value="110">&nbsp; &nbsp; &nbsp; &gt; 日语学习交流版</option><option value="115">&nbsp; &gt; 体坛风云</option><option value="143">&nbsp; &nbsp; &nbsp; &gt; 菠菜组内部版面</option><option value="124">&nbsp; &gt; 职场生涯</option><option value="">&nbsp;</option><option value="">联盟交流区</option><option value="79">&nbsp; &gt; 联盟 FTP 列表</option><option value="87">&nbsp; &nbsp; &nbsp; &gt; 列表区公告</option><option value="105">&nbsp; &nbsp; &nbsp; &gt; 待整理 FTP 列表</option><option value="94">&nbsp; &nbsp; &nbsp; &gt; 历史FTP留念</option><option value="68">&nbsp; &gt; 资源发布/下载区</option><option value="70">&nbsp; &nbsp; &nbsp; &gt; DivX</option><option value="131">&nbsp; &nbsp; &nbsp; &gt; OMTV</option><option value="139">&nbsp; &nbsp; &nbsp; &gt; HD MovieZ</option><option value="109">&nbsp; &nbsp; &nbsp; &gt; AsiaTV</option><option value="85">&nbsp; &nbsp; &nbsp; &gt; 电视节目</option><option value="74">&nbsp; &nbsp; &nbsp; &gt; 动漫类</option><option value="71">&nbsp; &nbsp; &nbsp; &gt; 游戏类</option><option value="69">&nbsp; &nbsp; &nbsp; &gt; 软件类</option><option value="72">&nbsp; &nbsp; &nbsp; &gt; 音乐类</option><option value="73">&nbsp; &nbsp; &nbsp; &gt; 学习类</option><option value="112">&nbsp; &nbsp; &nbsp; &gt; D2R小组内部版面</option><option value="133">&nbsp; &nbsp; &nbsp; &gt; 联盟字幕组内部版面</option><option value="15">&nbsp; &gt; 索档/补档区</option><option value="90">&nbsp; &nbsp; &nbsp; &gt; 已完成补档记录</option><option value="78">&nbsp; &gt; 新手 FTP 交流</option><option value="17">&nbsp; &nbsp; &nbsp; &gt; FTP 技术讨论</option><option value="">&nbsp;</option></select>
+</td><td align="right" class="smalltxt">
+查看 <select name="filter">
+<option value="0" >全部主题</option>
+<option value="86400" >1 天以来</option>
+<option value="172800" >2 天以来</option>
+<option value="604800" >1 周以来</option>
+<option value="2592000" >1 个月以来</option>
+<option value="7948800" >3 个月以来</option>
+<option value="15897600" >6 个月以来</option>
+<option value="31536000" >1 年以来</option>
+</select>&nbsp;&nbsp;<select name="ascdesc">
+<option value="ASC" >按升序排列</option>
+<option value="DESC" selected="selected">按降序排列</option>
+</select>&nbsp;
+<input type="submit" value="提 &nbsp; 交">
+</td></tr></table></form><br>
+<table width="365" align="center">
+<tr class="mediumtxt"><td class="smalltxt"><img src="/images/standard/red_folder.gif" alt="有新回复" align="absmiddle">&nbsp; 有新回复</td><td class="smalltxt">(&nbsp;<img src="/images/standard/hot_red_folder.gif" alt="多于 10 篇回复" align="absmiddle">&nbsp; 多于 10 篇回复 )</td><td class="smalltxt"><img src="/images/standard/lock_folder.gif" alt="关闭的主题" align="absmiddle">&nbsp; 关闭的主题</td></tr>
+<tr class="mediumtxt"><td class="smalltxt"><img src="/images/standard/folder.gif" alt="无新回复" align="absmiddle">&nbsp; 无新回复</td><td class="smalltxt">(&nbsp;<img src="/images/standard/hot_folder.gif" alt="多于 10 篇回复" align="absmiddle">&nbsp; 多于 10 篇回复 )</td><td class="smalltxt">&nbsp;</td></tr>
+</table><br>
+
+<script type="text/javascript">
+var max_tr = "21";
+$('td[id^=tr]').css('background', '#FFFFFF');
+//$('td[@id^=tr]').css('background', '#FFFFFF');
+keys_forumdisplay();
+</script>
+
+<br></td></tr></table>
+<br><center><a href="http://tieba.baidu.com/f?kw=%B1%B1%C0%EDftp%C1%AA%C3%CB" target=‘_blank’><img src="/attachments/forumid_92/g/j/gj5o_ZmF2aWNvbl90Yg==.png" border="0" alt="官方贴吧"></a>
+<a href="http://weibo.com/bitunion/" target=‘_blank’><img src="/attachments/forumid_92/B/P/BPAN_ZmF2aWNvbl93Yg==.png" border="0" alt="官方微博"></a>
+<a href="http://page.renren.com/600992618" target=‘_blank’><img src="/attachments/forumid_92/a/K/aKsw_ZmF2aWNvbl9ycg==.png" border="0"  alt="官方公共主页"></a><span class="smalltxt"><br>当前时刻: 2014年06月07日 00:27:58 甲午(马)年五月初十 星期六</span>
+<br><span class="footertext">
+Powered by <a href="http://www.Discuz.net" target="_blank"><b>Discuz!</b> 2.0</a>
+&copy; 2003-2014, <a href="http://www.soff.net" target="_blank">珊瑚虫工作室[Coral Studio]</a>
+<br>Processed in 14.3991 ms, 7 queries, <a href="/thread-10104915-1-1.html">Powered by LAMP</a>
+</span></center><a id="bottom"></a>
+</body></html>
