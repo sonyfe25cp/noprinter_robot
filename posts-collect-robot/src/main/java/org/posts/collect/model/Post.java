@@ -12,12 +12,14 @@ public class Post {
 	private int id;
 	private int postId;
 	private String title;
+	private String content;
 	private String author;
 	private Date publishDate;
 	private int readCount;
 	private int replyCount;
 	private String url;
 	private Date updateDate;
+	private boolean isLZ;//是否是顶楼
 	
 	public int getId() {
 		return id;
@@ -73,12 +75,26 @@ public class Post {
 	public void setUrl(String url) {
 		this.url = url;
 	}
+	
 	@Override
 	public String toString() {
 		return "Post [id=" + id + ", postId=" + postId + ", title=" + title
-				+ ", author=" + author + ", publishDate=" + publishDate
-				+ ", readCount=" + readCount + ", replyCount=" + replyCount
-				+ ", url=" + url + ", updateDate=" + updateDate + "]";
+				+ ", content=" + content + ", author=" + author
+				+ ", publishDate=" + publishDate + ", readCount=" + readCount
+				+ ", replyCount=" + replyCount + ", url=" + url
+				+ ", updateDate=" + updateDate + ", isLZ=" + isLZ + "]";
+	}
+	public boolean isLZ() {
+		return isLZ;
+	}
+	public void setLZ(boolean isLZ) {
+		this.isLZ = isLZ;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
 	}
 	
 	

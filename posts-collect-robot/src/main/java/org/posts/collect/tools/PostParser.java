@@ -2,20 +2,54 @@ package org.posts.collect.tools;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.posts.collect.model.Post;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class PostParser {
-	
-	public static List<Post> parsePage(String html){
-		return null;
+	static Logger logger = LoggerFactory.getLogger(PostParser.class);
+
+	public static List<Post> parsePage(String html) {
+		List<Post> posts = new ArrayList<>();
+		Document document = Jsoup.parse(html);
+		Elements texts = document.select(".t_smallfont");
+		for(int i = 1; i < texts.size(); i= i+2){
+			String title = texts.get(i).text();
+			String content = texts.get(i+1).html();
+			if(content.contains("<table")){
+				content = matchContent(content);
+			}else{
+				content = texts.get(i+1).text();
+			}
+//			logger.info("title: {}", title);
+//			logger.info("content : {}", content);
+//			logger.info("------");
+			Post post = new Post();
+			post.setTitle(title);
+			post.setContent(content);
+			posts.add(post);
+		}
+		return posts;
 	}
 	
+	static Pattern yinyongPattern = Pattern.compile("<br />(.+)</td>|<br>(.+)</div>");
+	public static String matchContent(String html){
+		Matcher matcher = yinyongPattern.matcher(html);
+		StringBuilder sb = new StringBuilder();
+		while(matcher.find()){
+			sb.append(matcher.group(1));
+		}
+		return sb.toString();
+	}
 	
+
 	/**
 	 * 解析posts列表页
 	 */
