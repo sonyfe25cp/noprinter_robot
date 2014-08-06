@@ -8,6 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.http.Header;
@@ -162,12 +163,21 @@ public class AutoFlashBitunion {
 		sb.append("updated at : " + today + "\n");
 		String content = sb.toString();
 
+		String[] array = { "【NoPrinter打印店】论文打印我们更专业！！！", "放假不回家的童鞋，寄些照片回家吧~~",
+				"电子书打印哪家强？北理菜市场NoPrinter打印店啊~~", "顶贴送代金券啦~~打印店赔本赚吆喝啦~~~" };
+
+		Random random = new Random();
+		float nextDouble = random.nextFloat();
+		float a = nextDouble * (array.length - 1);
+		int round = Math.round(a);
+		String titleBak = array[round];
+		System.out.println(round);
 		A meb = new A();
 		meb.addTextBody("editsubmit", "submit");
 		meb.addTextBody("page", "1");
 		meb.addTextBody("viewperm", "0");
 		meb.addTextBody("tag", "527");
-		meb.addTextBody("subject", today + "【NoPrinter打印店】论文打印我们更专业！！！",
+		meb.addTextBody("subject", today + " " + titleBak,
 				ContentType.APPLICATION_OCTET_STREAM);
 		meb.addTextBody("origsubject", "【NoPrinter打印店】论文打印我们更专业！！！",
 				ContentType.APPLICATION_OCTET_STREAM);
